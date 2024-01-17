@@ -70,7 +70,7 @@ export default function LeftSidebar() {
         {/* LOGO AND BAR */}
         <div className="md:flex flex-row gap-x-6 items-center justify-center py-6 border-b-lightGreen border-b-1 hidden  ">
             <Link href="/dashboard">
-                <Image height={45} width={45}  src="https://app.3mtt.training/static/media/main.242b8b1ce339b38fd589.png" />
+                <Image height={45} width={45} alt="logo"  src="https://app.3mtt.training/static/media/main.242b8b1ce339b38fd589.png" />
             </Link>
             <Button 
               onClick={() => setState(!state)}
@@ -92,7 +92,7 @@ export default function LeftSidebar() {
         <div className=" flex flex-col gap-2 h-full mt-4 overflow-auto">
            <div className=" flex flex-col gap-4 justify-center items-center text-slate font-poppins text-lg">
              {Navigation.map((item, idx) => (
-                <Link id={idx} href={item.Link} className={`${paths === item.Link ? "bg-green text-white" : "bg-white"} flex gap-4 shadow-lg hover:bg-lightGreen hover:text-white w-[90%] p-4 rounded-md`}>
+                <Link key={idx} href={item.Link} className={`${paths === item.Link ? "bg-green text-white" : "bg-white"} flex gap-4 shadow-lg hover:bg-lightGreen hover:text-white w-[90%] p-4 rounded-md`}>
                     <span>{paths === item.Link ? item.activeIcon : item.icon}</span>
                     <span>{item.tooltip}</span>
                 </Link>
@@ -107,7 +107,7 @@ export default function LeftSidebar() {
            </Card>
            <div className=" flex justify-center items-center mt-3 ">
            <Link href="/dashboard">
-              <Image height={100} width={100} src="https://app.3mtt.training/static/media/fg.0cc10dcc9e563bcbd74d.png" />
+              <Image height={100} alt="logo" width={100} src="https://app.3mtt.training/static/media/fg.0cc10dcc9e563bcbd74d.png" />
            </Link>
            </div>
            <div className=" px-9">

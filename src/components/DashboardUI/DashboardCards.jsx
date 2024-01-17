@@ -15,7 +15,7 @@ export default function DashboardCards() {
           <Card className=' bg-green hover:opacity-90 flex flex-row items-center justify-between rounded-md'>
             <h1 className=' text-white px-4 text-xs md:text-3xl lg:text-3xl md:p-7'>Hello <strong>Ladalo</strong>, <br /> Welcome to your naijaschools Dashboard</h1>
             <div className=' flex items-baseline pl-4'>
-            <Image height={350} width={350} src='https://app.3mtt.training/static/media/education-girl.b8a777ab708c361de94c.png' className=' items-baseline' />
+            <Image height={350} width={350} alt="logo" src='https://app.3mtt.training/static/media/education-girl.b8a777ab708c361de94c.png' className=' items-baseline'  />
             </div>
           </Card>
           <Card className=' p-5 bg-lightRed hover:opacity-90 flex flex-row text-white rounded-md items-center font-poppins text-sm md:text-lg'>

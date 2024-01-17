@@ -22,7 +22,7 @@ import { BsCart2 } from 'react-icons/bs'
 
 
 
-export default () => {
+export default function TopNavBar() {
 
 //   const [state, setState] = useState(false)
   const [mobileMenu, setMobileMenu] = useState(false)

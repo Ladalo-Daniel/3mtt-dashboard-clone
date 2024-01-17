@@ -48,7 +48,7 @@ import { useRef, useState } from "react"
     )
 }
 
-export default () => {
+export default function Faq() {
 
     const faqsList = [
         {
@@ -87,7 +87,7 @@ export default () => {
                 {
                     faqsList.map((item, idx) => (
                         <FaqsCard
-                            idx={idx}
+                            key={idx}
                             faqsList={item}
                         />
                     ))

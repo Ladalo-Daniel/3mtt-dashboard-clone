@@ -78,7 +78,7 @@ export default function MobileMenu({ state, setState }) {
         <div className=" flex flex-col gap-1 h-full  overflow-auto mt-2">
            <div className=" flex flex-col gap-4 justify-center items-center text-slate font-poppins text-lg">
              {Navigation.map((item, idx) => (
-                <Link id={idx} href={item.Link} className={`${paths === item.Link ? "bg-green text-white" : "bg-white"} flex gap-4 shadow-lg hover:bg-lightGreen hover:text-white w-[90%] p-4 rounded-md`}>
+                <Link key={idx} href={item.Link} className={`${paths === item.Link ? "bg-green text-white" : "bg-white"} flex gap-4 shadow-lg hover:bg-lightGreen hover:text-white w-[90%] p-4 rounded-md`}>
                     <Button>{paths === item.Link ? item.activeIcon : item.icon}</Button>
                     <span>{item.tooltip}</span>
                 </Link>
@@ -91,7 +91,7 @@ export default function MobileMenu({ state, setState }) {
            </Card>
            <div className=" flex justify-center items-center mt-1">
            <Link href="/dashboard">
-              <Image height={80} width={80} src="https://app.3mtt.training/static/media/fg.0cc10dcc9e563bcbd74d.png" />
+              <Image height={80} alt="logo" width={80} src="https://app.3mtt.training/static/media/fg.0cc10dcc9e563bcbd74d.png" />
            </Link>
            </div>
            <div className=" px-6">
